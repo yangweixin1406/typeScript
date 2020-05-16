@@ -54,3 +54,15 @@ function f (input: boolean) {
 
   return a;
 }
+
+// 结构数组
+let input = [1, 2]
+let [first, second] = input;
+// [first, second] = [second, first]
+
+// let [first1, ...rest] = [1, 2, 3, 4]
+
+// let [first2] = [3, 5, 9, 10]
+
+// 对象结构赋值
+({ a1, b1 } = { a1: 'Jack', b1: 10})
