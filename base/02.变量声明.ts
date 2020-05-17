@@ -65,4 +65,4 @@ let [first, second] = input;
 // let [first2] = [3, 5, 9, 10]
 
 // 对象结构赋值
-({ a1, b1 } = { a1: 'Jack', b1: 10})
+// ({ a1, b1 } = { a1: 'Jack', b1: 10})
