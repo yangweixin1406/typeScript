@@ -89,14 +89,14 @@ class Cat {
 /**
  * 存取器
  */
-class Employee {
-  fullName: string;
-}
-let employee = new Employee();
-employee.fullName = 'Jack loves kin'
-if (employee.fullName) {
-  console.log('I have a pen, I have an apple.')
-}
+// class Employee {
+//   fullName: string;
+// }
+// let employee = new Employee();
+// employee.fullName = 'Jack loves kin'
+// if (employee.fullName) {
+//   console.log('I have a pen, I have an apple.')
+// }
 
 let passcode = 'secret passcode';
 class Password {
@@ -105,4 +105,17 @@ class Password {
   get fullName(): string {
     return this._fullName
   }
+
+  set fullName(newName: string) {
+    if (passcode && passcode === 'secret passcode') {
+      this._fullName = newName;
+    } else {
+      console.log('Error');
+    }
+  }
+}
+let password = new Password()
+password.fullName = 'Jack wolfskin';
+if (password.fullName) {
+  alert(password.fullName)
 }
